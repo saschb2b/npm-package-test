@@ -1,10 +1,13 @@
 {
-  "name": "npm-package-test",
-  "version": "1.0.0",
+  "name": "@saschb2b/npm-package-test",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0"
   },
   "repository": {
     "type": "git",
@@ -15,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/saschb2b/npm-package-test/issues"
   },
-  "homepage": "https://github.com/saschb2b/npm-package-test#readme"
+  "homepage": "https://github.com/saschb2b/npm-package-test#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
